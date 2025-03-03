@@ -1,0 +1,1266 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styles.css" data-precedence="next" />
+        <title>BoilerPlate.Help - AI-Powered Recipes Tailored to Your Taste</title>
+        <meta
+            name="description"
+            content="Discover personalized recipes, meal plans, and cooking tips powered by artificial intelligence."
+        />
+        <meta name="generator" content="v0.dev" />
+        <meta name="next-size-adjust" />
+    </head>
+    <body class="__className_d65c78">
+        <div class="flex min-h-screen flex-col">
+            <header
+                class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+            >
+                <div class="container flex h-16 items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-chef-hat h-6 w-6 text-primary"
+                        >
+                            <path
+                                d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"
+                            ></path>
+                            <path d="M6 17h12"></path></svg
+                        ><span class="text-xl font-bold">BoilerPlate.Help</span>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-6">
+                        <a class="text-sm font-medium hover:text-primary" href="#features"
+                            >Features</a
+                        ><a class="text-sm font-medium hover:text-primary" href="#how-it-works"
+                            >How It Works</a
+                        ><a class="text-sm font-medium hover:text-primary" href="#pricing"
+                            >Pricing</a
+                        ><a class="text-sm font-medium hover:text-primary" href="#testimonials"
+                            >Testimonials</a
+                        >
+                    </nav>
+                    <div class="flex items-center gap-4">
+                        <a
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                            href="/login"
+                            >Log in</a
+                        ><a
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3"
+                            href="/signup"
+                            >Sign up</a
+                        >
+                    </div>
+                </div>
+            </header>
+            <main class="flex-1">
+                <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+                    <div class="container px-4 md:px-6">
+                        <div
+                            class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]"
+                        >
+                            <div class="flex flex-col justify-center space-y-4">
+                                <div class="space-y-2">
+                                    <h1
+                                        class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                                    >
+                                        AI-Powered Recipes Tailored to Your Taste
+                                    </h1>
+                                    <p class="max-w-[600px] text-muted-foreground md:text-xl">
+                                        Discover personalized recipes, meal plans, and cooking tips
+                                        powered by artificial intelligence.
+                                    </p>
+                                </div>
+                                <div class="flex flex-col gap-2 min-[400px]:flex-row">
+                                    <a
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8"
+                                        href="/signup"
+                                        >Get Started
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-arrow-right ml-2 h-4 w-4"
+                                        >
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path></svg></a
+                                    ><a
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8"
+                                        href="#how-it-works"
+                                        >See How It Works</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <div class="relative h-[450px] w-full overflow-hidden rounded-xl">
+                                    <img
+                                        src="image.png"
+                                        alt="AI-generated recipe with ingredients and instructions"
+                                        class="object-cover w-full h-full"
+                                    />
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-background/80 to-background/20"
+                                    ></div>
+                                    <div
+                                        class="absolute bottom-4 left-4 right-4 rounded-lg bg-background/90 p-4 backdrop-blur"
+                                    >
+                                        <div class="flex items-center gap-2">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-sparkles h-5 w-5 text-primary"
+                                            >
+                                                <path
+                                                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                                                ></path>
+                                                <path d="M20 3v4"></path>
+                                                <path d="M22 5h-4"></path>
+                                                <path d="M4 17v2"></path>
+                                                <path d="M5 18H3"></path></svg
+                                            ><span class="text-sm font-medium"
+                                                >AI-generated Mediterranean Bowl with custom
+                                                ingredients</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="features" class="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+                    <div class="container px-4 md:px-6">
+                        <div
+                            class="flex flex-col items-center justify-center space-y-4 text-center"
+                        >
+                            <div class="space-y-2">
+                                <div
+                                    class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground"
+                                >
+                                    Features
+                                </div>
+                                <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                                    Everything You Need for Smarter Cooking
+                                </h2>
+                                <p
+                                    class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                                >
+                                    Our AI-powered platform transforms how you plan, cook, and enjoy
+                                    meals.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3"
+                        >
+                            <div
+                                class="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm"
+                            >
+                                <div class="rounded-full bg-primary/10 p-3">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-search h-6 w-6 text-primary"
+                                    >
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <path d="m21 21-4.3-4.3"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold">Smart Recipe Search</h3>
+                                <p class="text-center text-muted-foreground">
+                                    Find recipes based on ingredients you already have at home.
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm"
+                            >
+                                <div class="rounded-full bg-primary/10 p-3">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-leaf h-6 w-6 text-primary"
+                                    >
+                                        <path
+                                            d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+                                        ></path>
+                                        <path
+                                            d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold">Dietary Preferences</h3>
+                                <p class="text-center text-muted-foreground">
+                                    Personalized recipes for any diet: vegan, keto, gluten-free, and
+                                    more.
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm"
+                            >
+                                <div class="rounded-full bg-primary/10 p-3">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-clock h-6 w-6 text-primary"
+                                    >
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold">Meal Planning</h3>
+                                <p class="text-center text-muted-foreground">
+                                    AI-generated weekly meal plans based on your preferences and
+                                    schedule.
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm"
+                            >
+                                <div class="rounded-full bg-primary/10 p-3">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-shopping-cart h-6 w-6 text-primary"
+                                    >
+                                        <circle cx="8" cy="21" r="1"></circle>
+                                        <circle cx="19" cy="21" r="1"></circle>
+                                        <path
+                                            d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold">Smart Shopping Lists</h3>
+                                <p class="text-center text-muted-foreground">
+                                    Automatically generated shopping lists from your selected
+                                    recipes.
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm"
+                            >
+                                <div class="rounded-full bg-primary/10 p-3">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-message-square h-6 w-6 text-primary"
+                                    >
+                                        <path
+                                            d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold">Cooking Assistant</h3>
+                                <p class="text-center text-muted-foreground">
+                                    Get real-time cooking guidance and answers to your culinary
+                                    questions.
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm"
+                            >
+                                <div class="rounded-full bg-primary/10 p-3">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-heart h-6 w-6 text-primary"
+                                    >
+                                        <path
+                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold">Taste Learning</h3>
+                                <p class="text-center text-muted-foreground">
+                                    Our AI learns your preferences to suggest better recipes over
+                                    time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="how-it-works" class="w-full py-12 md:py-24 lg:py-32">
+                    <div class="container px-4 md:px-6">
+                        <div
+                            class="flex flex-col items-center justify-center space-y-4 text-center"
+                        >
+                            <div class="space-y-2">
+                                <div
+                                    class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground"
+                                >
+                                    How It Works
+                                </div>
+                                <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                                    Cooking Made Simple with AI
+                                </h2>
+                                <p
+                                    class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                                >
+                                    Our platform makes meal planning and cooking effortless in just
+                                    a few steps.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 md:grid-cols-3">
+                            <div class="flex flex-col items-center space-y-4">
+                                <div
+                                    class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground"
+                                >
+                                    1
+                                </div>
+                                <h3 class="text-xl font-bold">Tell Us Your Preferences</h3>
+                                <p class="text-center text-muted-foreground">
+                                    Share your dietary needs, allergies, and taste preferences to
+                                    personalize your experience.
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center space-y-4">
+                                <div
+                                    class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground"
+                                >
+                                    2
+                                </div>
+                                <h3 class="text-xl font-bold">Get AI-Generated Recipes</h3>
+                                <p class="text-center text-muted-foreground">
+                                    Our AI creates personalized recipes and meal plans tailored to
+                                    your unique needs.
+                                </p>
+                            </div>
+                            <div class="flex flex-col items-center space-y-4">
+                                <div
+                                    class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground"
+                                >
+                                    3
+                                </div>
+                                <h3 class="text-xl font-bold">Cook with Confidence</h3>
+                                <p class="text-center text-muted-foreground">
+                                    Follow step-by-step instructions and get real-time assistance
+                                    while you cook.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div
+                                class="relative h-[400px] w-full max-w-4xl overflow-hidden rounded-xl"
+                            >
+                                <img
+                                    src="image.png"
+                                    alt="BoilerPlate.Help platform interface showing meal planning"
+                                    class="object-cover w-full h-full"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="pricing" class="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+                    <div class="container px-4 md:px-6">
+                        <div
+                            class="flex flex-col items-center justify-center space-y-4 text-center"
+                        >
+                            <div class="space-y-2">
+                                <div
+                                    class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground"
+                                >
+                                    Pricing
+                                </div>
+                                <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                                    Choose the Perfect Plan for Your Kitchen
+                                </h2>
+                                <p
+                                    class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                                >
+                                    Flexible options to fit your cooking style and budget.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-3">
+                            <div class="flex flex-col rounded-lg border shadow-sm">
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-bold">Free</h3>
+                                    <div class="mt-4 flex items-baseline text-3xl font-bold">
+                                        $0<span
+                                            class="ml-1 text-sm font-medium text-muted-foreground"
+                                            >/month</span
+                                        >
+                                    </div>
+                                    <p class="mt-4 text-muted-foreground">
+                                        Perfect for casual cooks looking to explore AI-powered
+                                        recipes.
+                                    </p>
+                                    <ul class="mt-6 space-y-3">
+                                        <li class="flex items-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="mr-2 h-4 w-4 text-primary"
+                                            >
+                                                <polyline points="20 6 9 17 4 12"></polyline></svg
+                                            >10 AI recipe generations per month
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="mr-2 h-4 w-4 text-primary"
+                                            >
+                                                <polyline points="20 6 9 17 4 12"></polyline></svg
+                                            >Basic recipe search
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="mr-2 h-4 w-4 text-primary"
+                                            >
+                                                <polyline points="20 6 9 17 4 12"></polyline></svg
+                                            >Shopping list generation
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mt-auto flex p-6">
+                                    <a
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full"
+                                        href="/signup"
+                                        >Get Started</a
+                                    >
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col rounded-lg border bg-primary text-primary-foreground shadow-sm"
+                            >
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-bold">Premium</h3>
+                                    <div class="mt-4 flex items-baseline text-3xl font-bold">
+                                        $9.99<span
+                                            class="ml-1 text-sm font-medium text-primary-foreground/70"
+                                            >/month</span
+                                        >
+                                    </div>
+                                    <p class="mt-4 text-primary-foreground/90">
+                                        For home cooks who want to elevate their cooking experience.
+                                    </p>
+                                    <ul class="mt-6 space-y-3">
+                                        <li class="flex items-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="mr-2 h-4 w-4"
+                                            >
+                                                <polyline points="20 6 9 17 4 12"></polyline></svg
+                                            >Unlimited AI recipe generations
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="mr-2 h-4 w-4"
+                                            >
+                                                <polyline points="20 6 9 17 4 12"></polyline></svg
+                                            >Advanced dietary customization
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="mr-2 h-4 w-4"
+                                            >
+                                                <polyline points="20 6 9 17 4 12"></polyline></svg
+                                            >Weekly meal planning
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="mr-2 h-4 w-4"
+                                            >
+                                                <polyline points="20 6 9 17 4 12"></polyline></svg
+                                            >AI cooking assistant
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mt-auto flex p-6">
+                                    <a
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2 w-full"
+                                        href="/signup"
+                                        >Get Started</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="flex flex-col rounded-lg border shadow-sm">
+                                <div class="p-6">
+                                    <h3 class="text-2xl font-bold">Chef</h3>
+                                    <div class="mt-4 flex items-baseline text-3xl font-bold">
+                                        $19.99<span
+                                            class="ml-1 text-sm font-medium text-muted-foreground"
+                                            >/month</span
+                                        >
+                                    </div>
+                                    <p class="mt-4 text-muted-foreground">
+                                        For culinary enthusiasts and professional chefs.
+                                    </p>
+                                    <ul class="mt-6 space-y-3">
+                                        <li class="flex items-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="mr-2 h-4 w-4 text-primary"
+                                            >
+                                                <polyline points="20 6 9 17 4 12"></polyline></svg
+                                            >Everything in Premium
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="mr-2 h-4 w-4 text-primary"
+                                            >
+                                                <polyline points="20 6 9 17 4 12"></polyline></svg
+                                            >Recipe scaling for events
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="mr-2 h-4 w-4 text-primary"
+                                            >
+                                                <polyline points="20 6 9 17 4 12"></polyline></svg
+                                            >Nutritional analysis
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="mr-2 h-4 w-4 text-primary"
+                                            >
+                                                <polyline points="20 6 9 17 4 12"></polyline></svg
+                                            >Priority support
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="mr-2 h-4 w-4 text-primary"
+                                            >
+                                                <polyline points="20 6 9 17 4 12"></polyline></svg
+                                            >Recipe development tools
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mt-auto flex p-6">
+                                    <a
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full"
+                                        href="/signup"
+                                        >Get Started</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="testimonials" class="w-full py-12 md:py-24 lg:py-32">
+                    <div class="container px-4 md:px-6">
+                        <div
+                            class="flex flex-col items-center justify-center space-y-4 text-center"
+                        >
+                            <div class="space-y-2">
+                                <div
+                                    class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground"
+                                >
+                                    Testimonials
+                                </div>
+                                <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                                    What Our Users Are Saying
+                                </h2>
+                                <p
+                                    class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                                >
+                                    Join thousands of satisfied cooks who have transformed their
+                                    kitchen experience.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3"
+                        >
+                            <div class="flex flex-col rounded-lg border p-6 shadow-sm">
+                                <div class="flex items-center gap-4">
+                                    <img
+                                        src="user1.jpg"
+                                        alt="User avatar"
+                                        class="rounded-full h-12 w-12 object-cover"
+                                    />
+                                    <div>
+                                        <h4 class="font-bold">Sarah Johnson</h4>
+                                        <p class="text-sm text-muted-foreground">Home Cook</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class="text-muted-foreground">
+                                        &quot;BoilerPlate.Help has completely changed how I cook. I
+                                        used to waste so much food, but now I can create recipes
+                                        with what I already have. The meal planning feature saves me
+                                        hours every week!&quot;
+                                    </p>
+                                </div>
+                                <div class="mt-4 flex">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon></svg
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon></svg
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon></svg
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon></svg
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex flex-col rounded-lg border p-6 shadow-sm">
+                                <div class="flex items-center gap-4">
+                                    <img
+                                        src="user2.jpg"
+                                        alt="User avatar"
+                                        class="rounded-full h-12 w-12 object-cover"
+                                    />
+                                    <div>
+                                        <h4 class="font-bold">Michael Chen</h4>
+                                        <p class="text-sm text-muted-foreground">
+                                            Culinary Student
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class="text-muted-foreground">
+                                        &quot;As a culinary student, I&#x27;m always looking to
+                                        experiment. The AI suggestions have introduced me to flavor
+                                        combinations I never would have tried. It&#x27;s like having
+                                        a mentor in my pocket!&quot;
+                                    </p>
+                                </div>
+                                <div class="mt-4 flex">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon></svg
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon></svg
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon></svg
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon></svg
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex flex-col rounded-lg border p-6 shadow-sm">
+                                <div class="flex items-center gap-4">
+                                    <img
+                                        src="user3.jpg"
+                                        alt="User avatar"
+                                        class="rounded-full h-12 w-12 object-cover"
+                                    />
+                                    <div>
+                                        <h4 class="font-bold">Emily Rodriguez</h4>
+                                        <p class="text-sm text-muted-foreground">Busy Parent</p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <p class="text-muted-foreground">
+                                        &quot;With three kids with different dietary needs, mealtime
+                                        was a nightmare. BoilerPlate.Help helps me create meals
+                                        everyone loves while accommodating allergies and
+                                        preferences. It&#x27;s been a lifesaver!&quot;
+                                    </p>
+                                </div>
+                                <div class="mt-4 flex">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon></svg
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon></svg
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon></svg
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon></svg
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="h-5 w-5 text-yellow-500"
+                                    >
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                        ></polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="faq" class="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+                    <div class="container px-4 md:px-6">
+                        <div
+                            class="flex flex-col items-center justify-center space-y-4 text-center"
+                        >
+                            <div class="space-y-2">
+                                <div
+                                    class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground"
+                                >
+                                    FAQ
+                                </div>
+                                <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                                    Frequently Asked Questions
+                                </h2>
+                                <p
+                                    class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                                >
+                                    Everything you need to know about BoilerPlate.Help.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2">
+                            <div class="rounded-lg border p-6 shadow-sm">
+                                <h3 class="text-lg font-bold">
+                                    How does BoilerPlate.Help create personalized recipes?
+                                </h3>
+                                <p class="mt-2 text-muted-foreground">
+                                    Our AI analyzes your dietary preferences, ingredient
+                                    availability, and past recipe ratings to create personalized
+                                    recipes that match your taste profile and nutritional needs.
+                                </p>
+                            </div>
+                            <div class="rounded-lg border p-6 shadow-sm">
+                                <h3 class="text-lg font-bold">
+                                    Can I use BoilerPlate.Help if I have dietary restrictions?
+                                </h3>
+                                <p class="mt-2 text-muted-foreground">
+                                    BoilerPlate.Help excels at creating recipes for specific dietary
+                                    needs including vegan, vegetarian, keto, paleo, gluten-free,
+                                    dairy-free, and accommodating food allergies.
+                                </p>
+                            </div>
+                            <div class="rounded-lg border p-6 shadow-sm">
+                                <h3 class="text-lg font-bold">
+                                    How accurate are the nutritional calculations?
+                                </h3>
+                                <p class="mt-2 text-muted-foreground">
+                                    Our nutritional calculations are based on standard USDA data and
+                                    are typically within 10% accuracy. Premium and Chef plans offer
+                                    more detailed nutritional breakdowns.
+                                </p>
+                            </div>
+                            <div class="rounded-lg border p-6 shadow-sm">
+                                <h3 class="text-lg font-bold">Can I import my existing recipes?</h3>
+                                <p class="mt-2 text-muted-foreground">
+                                    Yes! You can import recipes from websites or by uploading photos
+                                    of written recipes. Our AI will digitize and organize them in
+                                    your personal recipe collection.
+                                </p>
+                            </div>
+                            <div class="rounded-lg border p-6 shadow-sm">
+                                <h3 class="text-lg font-bold">
+                                    How does the meal planning feature work?
+                                </h3>
+                                <p class="mt-2 text-muted-foreground">
+                                    Our AI creates weekly meal plans based on your preferences,
+                                    schedule, and nutritional goals. You can customize the number of
+                                    meals, serving sizes, and even plan for leftovers.
+                                </p>
+                            </div>
+                            <div class="rounded-lg border p-6 shadow-sm">
+                                <h3 class="text-lg font-bold">Is there a mobile app available?</h3>
+                                <p class="mt-2 text-muted-foreground">
+                                    Yes, BoilerPlate.Help is available on iOS and Android devices. The
+                                    mobile app includes all features of the web version plus barcode
+                                    scanning for easy ingredient tracking.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <a
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8"
+                                href="/signup"
+                                >Get Started Today
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right ml-2 h-4 w-4"
+                                >
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path></svg
+                            ></a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="w-full border-t py-6 md:py-12">
+                <div class="container px-4 md:px-6">
+                    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-2">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-chef-hat h-6 w-6 text-primary"
+                                >
+                                    <path
+                                        d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"
+                                    ></path>
+                                    <path d="M6 17h12"></path></svg
+                                ><span class="text-xl font-bold">BoilerPlate.Help</span>
+                            </div>
+                            <p class="text-sm text-muted-foreground">
+                                AI-powered recipes tailored to your taste and dietary needs.
+                            </p>
+                            <div class="flex gap-4">
+                                <a class="text-muted-foreground hover:text-foreground" href="#"
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="h-5 w-5"
+                                    >
+                                        <path
+                                            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                                        ></path></svg
+                                    ><span class="sr-only">Facebook</span></a
+                                ><a class="text-muted-foreground hover:text-foreground" href="#"
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="h-5 w-5"
+                                    >
+                                        <rect
+                                            width="20"
+                                            height="20"
+                                            x="2"
+                                            y="2"
+                                            rx="5"
+                                            ry="5"
+                                        ></rect>
+                                        <path
+                                            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                                        ></path>
+                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg
+                                    ><span class="sr-only">Instagram</span></a
+                                ><a class="text-muted-foreground hover:text-foreground" href="#"
+                                    ><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="h-5 w-5"
+                                    >
+                                        <path
+                                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                                        ></path></svg
+                                    ><span class="sr-only">Twitter</span></a
+                                >
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="text-lg font-bold">Product</h3>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a
+                                        class="text-sm text-muted-foreground hover:text-foreground"
+                                        href="#features"
+                                        >Features</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-sm text-muted-foreground hover:text-foreground"
+                                        href="#pricing"
+                                        >Pricing</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-sm text-muted-foreground hover:text-foreground"
+                                        href="#testimonials"
+                                        >Testimonials</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-sm text-muted-foreground hover:text-foreground"
+                                        href="#faq"
+                                        >FAQ</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="text-lg font-bold">Company</h3>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a
+                                        class="text-sm text-muted-foreground hover:text-foreground"
+                                        href="#"
+                                        >About</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-sm text-muted-foreground hover:text-foreground"
+                                        href="https://blog.autocode.work"
+                                        >Blog</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-sm text-muted-foreground hover:text-foreground"
+                                        href="https://github.com/msveshnikov/boiler-plate"
+                                        >GitHub</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-sm text-muted-foreground hover:text-foreground"
+                                        href="#"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="text-lg font-bold">Legal</h3>
+                            <ul class="space-y-2">
+                                <li>
+                                    <a
+                                        class="text-sm text-muted-foreground hover:text-foreground"
+                                        href="/terms"
+                                        >Terms of Service</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-sm text-muted-foreground hover:text-foreground"
+                                        href="/privacy"
+                                        >Privacy Policy</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-sm text-muted-foreground hover:text-foreground"
+                                        href="/privacy"
+                                        >Cookie Policy</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
+                        © 2025 MaxSoft. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
